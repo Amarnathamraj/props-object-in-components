@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import ExpenseItem from "./components/ExpenseItem";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Let's get Started</h1>
+      <ExpenseItem
+        date={new Date(2023, 7, 15)}
+        title="Insurance"
+        price="50"
+        location="Bangalore"
+      ></ExpenseItem>
+      <ExpenseItem
+        date={new Date(2023, 3, 25)}
+        title="Book"
+        price="20"
+        location="Delhi"
+      ></ExpenseItem>
+      <ExpenseItem
+        date={new Date(2023, 10, 11)}
+        title="Pen"
+        price="5"
+        location="Hyderabad"
+      ></ExpenseItem>
+      <ExpenseItem
+        date={new Date(2023, 1, 14)}
+        title="Laptop"
+        price="200"
+        location="Mumbai"
+      ></ExpenseItem>
+    
     </div>
   );
 }
